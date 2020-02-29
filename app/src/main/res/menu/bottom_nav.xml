@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/menu_home"
+        android:title="Pulpit" />
+    <item
+        android:id="@+id/payments"
+        android:icon="@drawable/menu_payments"
+        android:title="Płatności" />
+    <item
+        android:id="@+id/finance"
+        android:icon="@drawable/menu_finance"
+        android:title="Finanse" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/menu_profile"
+        android:title="Profil" />
+
+</menu>

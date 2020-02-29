@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/keyboardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:fontFamily="sans-serif-light"
+    android:rowCount="4"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="1">
+        <!--        android:textColor="#000"-->
+        <!--        android:textSize="25sp"-->
+        <!--        android:layout_marginLeft="20dp"-->
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="2">
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="2" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="ABC" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="3">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="3" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="DEF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="4">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GHI" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="5">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JKL" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="6">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MNO" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="7">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PQRS" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="8">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUV" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="9">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+        <TextView
+            style="@style/keyboardButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WXYZ" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="false"
+        android:focusable="false">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="0">
+
+        <TextView
+            style="@style/keyboardButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="pinInsert"
+        android:tag="del">
+
+<!--        <TextView-->
+<!--            style="@style/keyboardButtonNumber"-->
+<!--            android:textSize="27sp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:fontFamily="sans-serif-thin"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="\u232b" />-->
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="@dimen/keyboard_button_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/ic_backspace_transparent" />
+
+    </RelativeLayout>
+</GridLayout>
