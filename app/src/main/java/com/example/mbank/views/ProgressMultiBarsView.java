@@ -50,7 +50,7 @@ public class ProgressMultiBarsView extends View
         if (!isInEditMode())
             setWillNotDraw(true);
         arcPaint = new Paint();
-        strokeWidth = UIUtils.dpToPx(1, getContext());
+        strokeWidth = UIUtils.dpToPx(0.9f, getContext());
 
         arcPaint.setStrokeWidth(strokeWidth);
         arcPaint.setStyle(Paint.Style.STROKE);
@@ -70,7 +70,7 @@ public class ProgressMultiBarsView extends View
 
     @Override
     protected void onDraw(Canvas canvas) {
-        drawArcs(canvas, UIUtils.dpToPx(2, getContext()), 8);
+        drawArcs(canvas, UIUtils.dpToPx(1, getContext()), 8);
         super.onDraw(canvas);
     }
 
@@ -98,7 +98,7 @@ public class ProgressMultiBarsView extends View
 
     private void setupAnimator(){
         animator = ValueAnimator.ofInt(0, ARCS_COUNT*360);
-        animator.setDuration(4500);
+        animator.setDuration(4000);
         animator.setRepeatCount(ValueAnimator.INFINITE);
         animator.addUpdateListener(this);
         animator.setInterpolator(new LinearInterpolator());

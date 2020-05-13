@@ -10,23 +10,42 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@drawable/grd"
-        android:fitsSystemWindows="true">
+        android:background="@drawable/bd_noblurr"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_centerVertical="false">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:paddingLeft="50dp"
-            android:text="Witaj w mBanku"
-            android:textColor="@android:color/white"
-            android:textSize="23dp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#f3f4f1"
+            android:gravity="bottom">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_vertical"
+                android:paddingLeft="75dp"
+                android:text="Witaj w mBanku"
+                android:textColor="@android:color/black"
+                android:textSize="22dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <com.example.mbank.views.ProgressMultiBarsView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:layout_centerInParent="true" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -76,28 +95,28 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="15dp"
                         android:fontFamily="sans-serif-light"
-                        android:paddingTop="10dp"
+                        android:paddingTop="5dp"
                         android:text="Podaj PIN, aby się zalogować"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="15sp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/inputPIN"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/podajPinTV"
-                        android:background="#E0E0E0"
+                        android:background="#e8e8e7"
                         android:clickable="false"
-                        android:fontFamily="sans-serif-black"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:inputType="numberPassword"
-                        android:letterSpacing="0.2"
+                        android:gravity="center|top"
+                        android:includeFontPadding="false"
+                        android:letterSpacing="0.55"
                         android:maxLength="8"
-                        android:textColor="#606060"
-                        android:textSize="45sp" />
+                        android:padding="13dp"
+                        android:textColor="#6a6a6a"
+                        android:textSize="26sp" />
 
                     <include
                         android:id="@+id/keyboardLayout"
@@ -110,7 +129,7 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/loginBtn"
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="38dp"
                         android:layout_below="@+id/keyboardLayout"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="10dp"
@@ -133,14 +152,14 @@
         android:layout_height="1dp"
         android:layout_above="@+id/bottomLayout"
         android:scaleType="fitXY"
-        android:src="@drawable/toolbar_background" />
+        android:src="@drawable/adviser_bar" />
 
     <RelativeLayout
         android:id="@+id/bottomLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        android:background="#D3D3D3">
+        android:background="#e8e8e7">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
@@ -158,8 +177,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:fontFamily="sans-serif-light"
-            android:paddingTop="10dp"
+            android:lineSpacingExtra="2dp"
             android:text="Dostępne środki\n rachunek: 100%"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
